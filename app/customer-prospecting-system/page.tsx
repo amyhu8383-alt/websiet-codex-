@@ -1,0 +1,5 @@
+import Link from "next/link";
+
+export default function CustomerProspectingPlaceholder() {
+  return <main><header className="app-header"><div className="app-title"><h1>B2B Customer Prospecting System</h1><p>Coming soon. This module is intentionally not built today.</p></div><nav className="header-actions"><Link className="button primary" href="/sales-follow-up-assistant">Open Follow-up Assistant</Link><Link className="button dark-button" href="/">Back to Dashboard</Link></nav></header><div className="page-shell"><section className="section"><h2>Future Customer Prospecting System</h2><p>Future version will cover competitor agents / dealers, installers, diesel generator customers, retail chain / OEM customers, balcony energy storage competitor dealers, inverter + battery pack channels, e-commerce sellers, and emergency backup customers.</p><div className="disabled-sources"><button disabled>Competitor agents / dealers</button><button disabled>Installers</button><button disabled>Generator customers</button><button disabled>Retail chain / OEM customers</button><button disabled>E-commerce sellers</button></div></section></div></main>;
+}

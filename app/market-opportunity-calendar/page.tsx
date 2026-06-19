@@ -1,0 +1,5 @@
+import Link from "next/link";
+
+export default function MarketCalendarPlaceholder() {
+  return <main><header className="app-header"><div className="app-title"><h1>Market Opportunity Intelligence</h1><p>Coming soon. This module is intentionally only a placeholder today.</p></div><nav className="header-actions"><Link className="button primary" href="/global-time-board">Open Global Time Board</Link><Link className="button dark-button" href="/">Back to Dashboard</Link></nav></header><div className="page-shell"><section className="section"><h2>Future Market Calendar</h2><p>Future version will add local holidays, Black Friday, Cyber Monday, Prime Day, regional buying seasons, hurricane season, camping season, solar season, and promotion reminders.</p><div className="disabled-sources"><button disabled>Hurricane season</button><button disabled>Local holidays</button><button disabled>Prime Day</button><button disabled>Black Friday</button><button disabled>Regional promotion calendar</button></div></section></div></main>;
+}
