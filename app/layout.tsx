@@ -1,0 +1,3 @@
+import type{Metadata}from"next";import"./globals.css";import{Header}from"@/components/Header";import{Footer}from"@/components/Footer";import{JsonLd}from"@/components/JsonLd";import{organizationSchema}from"@/lib/seo";import{MessageCircle}from"lucide-react";
+export const metadata:Metadata={metadataBase:new URL(process.env.NEXT_PUBLIC_SITE_URL||"https://b2b.oukitel.com")};
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><body><JsonLd data={organizationSchema}/><Header/>{children}<Footer/><a className="whatsapp" href="https://wa.me/8615914028277?text=Hello%20Amy%2C%20I%20am%20interested%20in%20OUKITEL%20B2B%20cooperation." aria-label="Contact OUKITEL on WhatsApp"><MessageCircle/></a></body></html>}

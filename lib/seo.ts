@@ -1,0 +1,4 @@
+import type {Metadata} from "next";
+const base=process.env.NEXT_PUBLIC_SITE_URL||"https://b2b.oukitel.com";
+export function metadata(title:string,description:string,path="/",noIndex=false):Metadata{return{title,description,metadataBase:new URL(base),alternates:{canonical:path},robots:noIndex?{index:false,follow:false}:{index:true,follow:true},openGraph:{title,description,url:path,siteName:"OUKITEL B2B",type:"website"}}}
+export const organizationSchema={"@context":"https://schema.org","@type":"Organization",name:"OUKITEL",legalName:"Shenzhen Yunji New Energy Technology Co., Ltd.",url:base,email:"amy@oukitelpower.com",address:{"@type":"PostalAddress",streetAddress:"26th Floor, Building C, Digital Innovation Center, Minzhi Avenue, Longhua District",addressLocality:"Shenzhen",addressCountry:"CN"},sameAs:["https://www.linkedin.com/in/amyhulucky"]};
